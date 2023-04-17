@@ -16,27 +16,27 @@ async def help_cb(c, m):
     await m.answer()
 
     # help text
-    help_text = """**You need Help?? 🧐**
+    help_text = """**ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ?? **
 
-★ Just send me the files i will store file and give you share able link
+★ ᴊᴜꜱᴛ ꜱᴇɴᴅ ᴍᴇ ᴛʜᴇ ꜰɪʟᴇꜱ ɪ ᴡɪʟʟ ꜱᴛᴏʀᴇ ꜰɪʟᴇ ᴀɴᴅ ɢɪᴠᴇ ʏᴏᴜ ꜱʜᴀʀᴇ ᴀʙʟᴇ ʟɪɴᴋ
 
 
-**You can use me in channel too 😉**
+**ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ ᴍᴇ ɪɴ ᴄʜᴀɴɴᴇʟ ᴛᴏᴏ**
 
-★ Make me admin in your channel with edit permission. Thats enough now continue uploading files in channel i will edit all posts and add share able link url buttons
+★ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ɪɴ ʏᴏᴜʀ ᴄʜᴀɴɴᴇʟ ᴡɪᴛʜ ᴇᴅɪᴛ ᴘᴇʀᴍɪꜱꜱɪᴏɴ. ᴛʜᴀᴛꜱ ᴇɴᴏᴜɢʜ ɴᴏᴡ ᴄᴏɴᴛɪɴᴜᴇ ᴜᴘʟᴏᴀᴅɪɴɢ ꜰɪʟᴇꜱ ɪɴ ᴄʜᴀɴɴᴇʟ ɪ ᴡɪʟʟ ᴇᴅɪᴛ ᴀʟʟ ᴘᴏꜱᴛꜱ ᴀɴᴅ ᴀᴅᴅ ꜱʜᴀʀᴇ ᴀʙʟᴇ ʟɪɴᴋ ᴜʀʟ ʙᴜᴛᴛᴏɴꜱ
 
-**How to enable uploader details in caption**
+**ʜᴏᴡ ᴛᴏ ᴇɴᴀʙʟᴇ ᴜᴘʟᴏᴀᴅᴇʀ ᴅᴇᴛᴀɪʟꜱ ɪɴ ᴄᴀᴘᴛɪᴏɴ**
 
-★ Use /mode command to change and also you can use `/mode channel_id` to control caption for channel msg."""
+★ ★ ᴜꜱᴇ /ᴍᴏᴅᴇ ᴄᴏᴍᴍᴀɴᴅ ᴛᴏ ᴄʜᴀɴɢᴇ ᴀɴᴅ ᴀʟꜱᴏ ʏᴏᴜ ᴄᴀɴ ᴜꜱᴇ `/ᴍᴏᴅᴇ ᴄʜᴀɴɴᴇʟ_ɪᴅ` ᴛᴏ ᴄᴏɴᴛʀᴏʟ ᴄᴀᴘᴛɪᴏɴ ꜰᴏʀ ᴄʜᴀɴɴᴇʟ ᴍꜱɢ."""
 
     # creating buttons
     buttons = [
         [
-            InlineKeyboardButton('Home 🏕', callback_data='home'),
-            InlineKeyboardButton('About 📕', callback_data='about')
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='home'),
+            InlineKeyboardButton('ᴀʙᴏᴜᴛ ', callback_data='about')
         ],
         [
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ', callback_data='close')
         ]
     ]
 
@@ -60,31 +60,31 @@ async def about_cb(c, m):
     bot = await c.get_me()
 
     # about text
-    about_text = f"""--**My Details:**--
+    about_text = f"""--**ᴍʏ ᴅᴇᴛᴀɪʟꜱ :**--
 
-🤖 𝐌𝐲 𝐍𝐚𝐦𝐞: {bot.mention(style='md')}
+ᴍʏ ɴᴀᴍᴇ : {bot.mention(style='md')}
     
-📝 𝐋𝐚𝐧𝐠𝐮𝐚𝐠𝐞: [Python 3](https://www.python.org/)
+ʟᴀɴɢᴜᴀɢᴇ : [Python 3](https://www.python.org/)
 
-🧰 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤: [Pyrogram](https://github.com/pyrogram/pyrogram)
+ꜰʀᴀᴍᴇᴡᴏʀᴋ : [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-👨‍💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫: {owner.mention(style='md')}
+ᴅᴇᴠʟᴏᴘᴇʀ : {owner.mention(style='md')}
 
-📢 𝐂𝐡𝐚𝐧𝐧𝐞𝐥: [NS BOT UPDATES](https://t.me/Ns_bot_updates)
+ᴄʜᴀɴɴᴇʟ : [ᴘᴀɪɴ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇ](https://t.me/Ns_bot_update)
 
-👥 𝐆𝐫𝐨𝐮𝐩: [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
+ɢʀᴏᴜᴘ : [ᴘᴀɪɴ ʙᴏᴛ ꜱᴜᴘᴘᴏʀᴛ ](https://t.me/Ns_Bot_supporte)
 
-🌐𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞: [Press Me 🥰](https://github.com/Ns-Bots/TG-File-Store)
+ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : [ᴘʀᴇꜱꜱ ᴍᴇ](ᴀᴘɴɪ ᴍᴀᴀ ᴍᴀᴛ ᴄʜᴜᴅᴀ )
 """
 
     # creating buttons
     buttons = [
         [
-            InlineKeyboardButton('Home 🏕', callback_data='home'),
-            InlineKeyboardButton('Help 💡', callback_data='help')
+            InlineKeyboardButton('ʜᴏᴍᴇ ', callback_data='home'),
+            InlineKeyboardButton('ʜᴇʟᴘ ', callback_data='help')
         ],
         [
-            InlineKeyboardButton('Close 🔐', callback_data='close')
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ ', callback_data='close')
         ]
     ]
 
@@ -116,4 +116,4 @@ async def delete_cb(c, m):
     chat_id = m.from_user.id if not DB_CHANNEL_ID else int(DB_CHANNEL_ID)
     message = await c.get_messages(chat_id, int(msg_id))
     await message.delete()
-    await m.message.edit("Deleted files successfully 👨‍✈️")
+    await m.message.edit("ᴅᴇʟᴇᴛᴇᴅ ꜰɪʟᴇꜱ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ")
